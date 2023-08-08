@@ -10,9 +10,10 @@ const fetchPokemon = () => {
             pokemon['name'] = data.name;
             pokemon['id'] = data.id;
             pokemon['image'] = data.sprites['front_default'];
-            pokemon['types'] = data.types.type;     // currently undefined. come back to this to get names of pokemon types (ie: 'grass', 'poison', etc)
+            // pokemon['types'] = data.types.type;     // currently undefined. come back to this to get names of pokemon types (ie: 'grass', 'poison', etc)
             
-           
+            
+            
             console.log(pokemon);
         });       
 };
