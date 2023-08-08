@@ -10,7 +10,7 @@ const fetchPokemon = () => {
             pokemon['name'] = data.name;
             pokemon['id'] = data.id;
             pokemon['image'] = data.sprites['front_default'];
-            pokemon['types'] = data.types.map((type) => type.type.name).join(', ');
+            pokemon['types'] = data.types.map((type) => type.type.name).join(', ');     // use map() method to iterate over each types element to create new array of types then join() those type names into a string separate by commas
             
             console.log(pokemon);
         });       
