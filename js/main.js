@@ -10,8 +10,10 @@ const fetchPokemon = () => {
             pokemon['name'] = data.name;
             pokemon['id'] = data.id;
             pokemon['image'] = data.sprites['front_default'];
-            console.log(pokemon)
+            pokemon['types'] = data.types.type;
+            // forEach(data.types => types.type.name);
+            console.log(pokemon);
         });       
-}
+};
 
 fetchPokemon();
