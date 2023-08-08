@@ -11,9 +11,6 @@ const fetchPokemon = () => {
             pokemon['id'] = data.id;
             pokemon['image'] = data.sprites['front_default'];
             
-            data.types.forEach( (type) => {
-                pokemon['types'] = pokemon['types'] + ', ' + type.type.name;
-            })
             
             console.log(pokemon);
         });       
