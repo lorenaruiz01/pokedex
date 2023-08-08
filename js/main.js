@@ -6,7 +6,12 @@ const fetchPokemon = () => {
         })
         .then( data => {                            // response.json returns another promise so then we call .then again to get the data and console.log the data
             console.log(data);
-            const pokemon = {};
+            const pokemon = {
+                name: data.name,
+                id: data.id,
+                image: data.sprites['front_default'],
+                types: data.types.map((type) => type.type.name).join(', ')
+            };
             pokemon['name'] = data.name;
             pokemon['id'] = data.id;
             pokemon['image'] = data.sprites['front_default'];
