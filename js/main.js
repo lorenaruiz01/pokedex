@@ -8,7 +8,8 @@ const fetchPokemon = () => {
             console.log(data);
             const pokemon = {};
             pokemon['name'] = data.name;
-            pokemon['id'] = data.id
+            pokemon['id'] = data.id;
+            pokemon['image'] = data.sprites['front_default'];
             console.log(pokemon)
         });       
 }
