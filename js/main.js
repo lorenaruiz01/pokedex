@@ -4,18 +4,18 @@ const fetchPokemon = () => {
         .then( response => {
             return response.json(); 
         })
-        .then( data => {                            // response.json returns another promise so then we call .then again to get the data and console.log the data
+        .then( data => {                                // response.json returns another promise so then we call .then again to get the data and console.log the data
             console.log(data);
             const pokemon = {
                 name: data.name,
                 id: data.id,
                 image: data.sprites['front_default'],
-                types: data.types.map((type) => type.type.name).join(', ')
+                types: data.types.map((type) => type.type.name).join(', ')      // use map() method to iterate over each types element to create new array of types then join() those type names into a string separate by commas
             };
             pokemon['name'] = data.name;
             pokemon['id'] = data.id;
             pokemon['image'] = data.sprites['front_default'];
-            pokemon['types'] = data.types.map((type) => type.type.name).join(', ');     // use map() method to iterate over each types element to create new array of types then join() those type names into a string separate by commas
+            pokemon['types'] = data.types.map((type) => type.type.name).join(', ');     
             
             console.log(pokemon);
         });       
