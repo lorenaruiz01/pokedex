@@ -5,8 +5,12 @@ const fetchPokemon = () => {
             return response.json(); 
         })
         .then( data => {                            // response.json returns another promise so then we call .then again to get the data and console.log the data
-            console.log(data)
-        })       
+            console.log(data);
+            const pokemon = {};
+            pokemon['name'] = data.name;
+            pokemon['id'] = data.id
+            console.log(pokemon)
+        });       
 }
 
 fetchPokemon();
