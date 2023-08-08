@@ -4,7 +4,9 @@ const fetchPokemon = () => {
         .then( response => {
             return response.json(); 
         })
-          
+        .then( data => {                            // response.json returns another promise so then we call .then again to get the data and console.log the data
+            console.log(data)
+        })       
 }
 
 fetchPokemon();
