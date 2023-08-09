@@ -24,11 +24,11 @@ const displayPokemon = (pokemon) => {
     const pokemonHTMLString = pokemon.map ( pokemon => 
         `<li>
             <img src="${pokemon.image}"/>
-            <h2>${pokemon.id}.${pokemon.name}</h2>
+            <h2>${pokemon.name} No.${pokemon.id}</h2>
             <p> Height: ${pokemon.height} m tall </p>
             <p>Types: ${pokemon.type}</p>
         </li>`
-        )
+        );
     pokedex.innerHTML = pokemonHTMLString;
 }
 
