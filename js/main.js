@@ -13,6 +13,7 @@ const fetchPokemon = () => {
             name: data.name,
             id: data.id,
             image: data.sprites['front_default'],
+            height: data.height,
             types: data.types.map((type) => type.type.name).join(', ')
         }));
         console.log(pokemon)
@@ -25,11 +26,11 @@ const displayPokemon = (pokemon) => {
         `<li>
             <img src="${pokemon.image}"/>
             <h2>${pokemon.name} No.${pokemon.id}</h2>
-            <p> Height: ${pokemon.height} m tall </p>
+            <p>Height: ${pokemon.height} m tall </p>
             <p>Types: ${pokemon.type}</p>
         </li>`
         );
     pokedex.innerHTML = pokemonHTMLString;
-}
+};
 
 fetchPokemon();
