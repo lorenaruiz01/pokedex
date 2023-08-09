@@ -58,7 +58,10 @@ body {
   grid-gap: 20px;
 }
 
-
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
