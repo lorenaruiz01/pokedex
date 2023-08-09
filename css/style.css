@@ -33,7 +33,11 @@ body {
 
 #pokedex{
   padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr);
 }
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
