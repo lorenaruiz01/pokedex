@@ -26,8 +26,8 @@ const displayPokemon = (pokemon) => {
         `<li class="card">
             <img class="card-image" src="${pokemon.image}"/>
             <h2 class="card-title">No. ${pokemon.id} ${pokemon.name}</h2>
-            <p>Height: ${pokemon.height} m tall </p>
-            <p>Types: ${pokemon.types}</p>
+            <p class="card-subtitle">Height: ${pokemon.height} m tall </p>
+            <p class="card-subtitle">Types: ${pokemon.types}</p>
         </li>`
         ).join('');
     pokedex.innerHTML = pokemonHTMLString;
