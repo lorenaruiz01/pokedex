@@ -23,7 +23,7 @@ const fetchPokemon = () => {
 const displayPokemon = (pokemon) => {
     console.log(pokemon);
     const pokemonHTMLString = pokemon.map ( pokemon => 
-        `<li>
+        `<li class="card">
             <img src="${pokemon.image}"/>
             <h2>No. ${pokemon.id} ${pokemon.name}</h2>
             <p>Height: ${pokemon.height} m tall </p>
