@@ -16,7 +16,7 @@ const fetchPokemon = () => {
             height: data.height,
             types: data.types.map((type) => type.type.name).join(', ')
         }));
-        console.log(pokemon)
+        displayPokemon(pokemon);
     });
 };
 
