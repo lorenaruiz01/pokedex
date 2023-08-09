@@ -1,6 +1,7 @@
 const pokedex = document.getElementById('pokedex');
 
 const fetchPokemon = () => {
+    const url = `https://pokeapi.co/api/v2/pokemon/?limit=150`;
 
     const promises = [];
     for (let i = 1; i <= 150; i++ ) {
