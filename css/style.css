@@ -46,6 +46,7 @@ body {
 
 .card-image {
   height: 180px;
+  margin: 0 auto;
 }
 
 #pokedex {
