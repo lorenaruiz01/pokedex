@@ -33,6 +33,16 @@ body {
   transition-duration: .5s;
 }
 
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20%{
+    transform: translateY(-6px);
+  }
+}
+
 .card-title {
   text-transform: uppercase;
   font-size: 32px;
