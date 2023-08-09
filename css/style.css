@@ -12,14 +12,15 @@
 /*******************************************/
 
 body {
-  background-color: lavender;
+  background-color: rgb(86, 80, 125);
   color: black;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }  
 
 .card {
-  border: 2px solid purple;
+  background-color: lavender;
+  border: 2px solid lavender;
   border-radius: 5px;
   padding: 40px;
   margin: 4px 2px;
@@ -40,8 +41,9 @@ body {
 
 .card-subtitle {
   font-weight: lighter;
-  color: darkgray;
-  margin-top: 5px
+  color: rgb(117, 117, 117);
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .card-image {
