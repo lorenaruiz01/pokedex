@@ -33,7 +33,11 @@ body {
 
 .card-title {
   text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
 }
+
+
 
 #pokedex {
   padding-inline-start: 0;
