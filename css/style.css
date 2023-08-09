@@ -37,7 +37,11 @@ body {
   font-weight: normal;
 }
 
-
+.card-subtitle {
+  font-weight: lighter;
+  color: gray;
+  margin-top: 5px
+}
 
 #pokedex {
   padding-inline-start: 0;
