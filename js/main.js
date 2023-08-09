@@ -24,7 +24,7 @@ const displayPokemon = (pokemon) => {
     console.log(pokemon);
     const pokemonHTMLString = pokemon.map ( pokemon => 
         `<li class="card">
-            <img src="${pokemon.image}"/>
+            <img class="card-image" src="${pokemon.image}"/>
             <h2>No. ${pokemon.id} ${pokemon.name}</h2>
             <p>Height: ${pokemon.height} m tall </p>
             <p>Types: ${pokemon.types}</p>
