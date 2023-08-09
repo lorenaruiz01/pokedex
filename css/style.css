@@ -31,7 +31,11 @@ body {
   transition-duration: .5s;
 }
 
-#pokedex{
+.card-title {
+  text-transform: uppercase;
+}
+
+#pokedex {
   padding-inline-start: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
