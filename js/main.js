@@ -20,7 +20,16 @@ const fetchPokemon = () => {
 };
 
 const displayPokemon = (pokemon) => {
-
+    console.log(pokemon);
+    const pokemonHTMLString = pokemon.map ( pokemon => 
+        `<li>
+            <img src="${pokemon.image}"/>
+            <h2>${pokemon.id}.${pokemon.name}</h2>
+            <p> Height: ${pokemon.height} m tall </p>
+            <p>Types: ${pokemon.type}</p>
+        </li>`
+        )
+    pokedex.innerHTML = pokemonHTMLString;
 }
 
 fetchPokemon();
