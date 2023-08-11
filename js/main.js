@@ -71,7 +71,3 @@ fetchPokemon();
 //         displayPokemon(pokemon);
 //     });
 
-
-// inside displayPokemon function:
-            // <p class="card-subtitle">Height: ${pokemon.height} m tall </p>
-            // <p class="card-subtitle">Types: ${pokemon.types}</p> 
