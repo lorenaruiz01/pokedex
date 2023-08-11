@@ -13,8 +13,7 @@ const fetchPokemon = async () => {
 };
 
 const displayPokemon = (pokemon) => {
-    console.log(pokemon);
-    const pokemonHTMLString = pokemon.map ( pokemon => 
+    const pokemonHTMLString = pokemon.map ( (pokemon) => 
         `<li class="card" onclick="selectPokemon(${pokemon.id})" >
             <img class="card-image" src="${pokemon.image}"/>
             <h2 class="card-title">#${pokemon.id} ${pokemon.name}</h2>
@@ -24,7 +23,7 @@ const displayPokemon = (pokemon) => {
 };
 
 const selectPokemon = async (id) => {
-
+    console.log(id);
 }
 
 fetchPokemon();
