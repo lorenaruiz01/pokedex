@@ -33,7 +33,7 @@ const displayPopup = (individualPokemonData) => {
     const type = individualPokemonData.types.map( (type) => type.type.name).join(', ');
     const htmlString = `
     <div class="popup">
-    
+        <button id="closeBtn" onclick="closePopup()">Close</button>
     </div>
     `
 };
