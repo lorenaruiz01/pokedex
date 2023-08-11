@@ -34,7 +34,7 @@ const displayPopup = (individualPokemonData) => {
     const htmlString = `
     <div class="popup">
         <button id="closeBtn" onclick="closePopup()">Close</button>
-        <div class="card" onclick="selectPokemon(${pokemon.id})" >
+        <div class="card">
             <img class="card-image" src="${pokemon.image}"/>
             <h2 class="card-title">#${pokemon.id} ${pokemon.name}</h2>
         </div>
