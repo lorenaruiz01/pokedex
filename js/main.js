@@ -49,4 +49,8 @@ const displayPopup = (pokemon) => {
     console.log(htmlString);
 };
 
+const closePopup = () => {
+    
+}
+
 fetchPokemon();
