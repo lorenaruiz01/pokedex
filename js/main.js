@@ -29,7 +29,6 @@ const selectPokemon = async (id) => {
         const response = await fetch(url);
         const pokemon = await response.json();
         pokeChache[id] = pokemon;
-        console.log(pokeChache);
         displayPopup(pokemon);
     } else{
         displayPopup(pokeChache[id]);
