@@ -117,6 +117,9 @@ button {
   transition: transform 100ms;
 }
 
+button:hover {
+  
+}
 
 /******************************************
 /* ADDITIONAL STYLES
