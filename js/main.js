@@ -23,7 +23,9 @@ const displayPokemon = (pokemon) => {
 };
 
 const selectPokemon = async (id) => {
-    console.log(id);
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+   
+
 }
 
 fetchPokemon();
