@@ -27,7 +27,8 @@ const selectPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const response = await fetch(url);
     const pokemon = await response.json();
-
+    pokeChache[id] = pokemon;
+    console.log(pokeChache);
     displayPopup(pokemon);
 };
 
