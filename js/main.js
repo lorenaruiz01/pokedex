@@ -1,4 +1,5 @@
 const pokedex = document.getElementById('pokedex');
+const pokeChache = {};
 
 const fetchPokemon = async () => {
     const url = `https://pokeapi.co/api/v2/pokemon/?limit=150`;
@@ -26,6 +27,7 @@ const selectPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const response = await fetch(url);
     const pokemon = await response.json();
+
     displayPopup(pokemon);
 };
 
