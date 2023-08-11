@@ -31,11 +31,12 @@ const selectPokemon = async (id) => {
 
 const displayPopup = (pokemon) => {
     const type = pokemon.types.map( (type) => type.type.name).join(', ');
+    const image = pokemon.sprites['front_default'];
     const htmlString = `
     <div class="popup">
         <button id="closeBtn" onclick="closePopup()">Close</button>
         <div class="card">
-            <img class="card-image" src="${pokemon.image}"/>
+            <img class="card-image" src="${image}"/>
             <h2 class="card-title">#${pokemon.id} ${pokemon.name}</h2>
             <p class="card-subtitle">Height: ${pokemon.height}m tall </p>
             <p class="card-subtitle">Types: ${type}</p>
