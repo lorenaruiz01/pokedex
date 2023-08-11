@@ -114,8 +114,9 @@ button {
   border: none;
   color:white;
   border-radius: 3px;
-  
+  transition: transform 100ms;
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
