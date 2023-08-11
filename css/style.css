@@ -110,6 +110,8 @@ h1 {
 
 button {
   background-color:rgb(86, 80, 125);
+  padding: 10px 20px;
+  border: none;
   
 }
 
