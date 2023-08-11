@@ -4,7 +4,12 @@ const fetchPokemon = async () => {
     const url = `https://pokeapi.co/api/v2/pokemon/?limit=150`;
     const responseFromUrl = await fetch(url);
     const data = await responseFromUrl.json();
-    console.log(data);
+    const pokemon = data.results.map( (result, index) => ({
+        name: data.name, 
+        id: index + 1,
+        image: 
+        height: 
+    }))
 };
 
 const displayPokemon = (pokemon) => {
