@@ -25,12 +25,12 @@ const displayPokemon = (pokemon) => {
 const selectPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const response = await fetch(url);
-    const individualPokemonData = await response.json();
-    displayPopup(individualPokemonData);
+    const pokemon = await response.json();
+    displayPopup(pokemon);
 };
 
-const displayPopup = (individualPokemonData) => {
-    const type = individualPokemonData.types.map( (type) => type.type.name).join(', ');
+const displayPopup = (pokemon) => {
+    const type = pokemon.types.map( (type) => type.type.name).join(', ');
     const htmlString = `
     <div class="popup">
         <button id="closeBtn" onclick="closePopup()">Close</button>
@@ -41,7 +41,8 @@ const displayPopup = (individualPokemonData) => {
             <p class="card-subtitle">Types: ${pokemon.types}</p>
         </div>
     </div>
-    `
+    `;
+    console.log(htmlString);
 };
 
 fetchPokemon();
