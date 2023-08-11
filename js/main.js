@@ -31,7 +31,9 @@ const selectPokemon = async (id) => {
         pokeChache[id] = pokemon;
         console.log(pokeChache);
         displayPopup(pokemon);
-}
+    } else{
+        displayPopup(pokeChache[id]);
+    }
 };
 
 const displayPopup = (pokemon) => {
