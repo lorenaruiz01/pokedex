@@ -43,7 +43,7 @@ const displayPopup = (pokemon) => {
     </div>
     `;
     
-    pokedex.innerHTML = htmlString + pokedex.innerHTML
+    pokedex.innerHTML = htmlString + pokedex.innerHTML;
     
     console.log(htmlString);
 };
