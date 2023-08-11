@@ -9,7 +9,6 @@ const fetchPokemon = async () => {
         id: index + 1,
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+ 1}.png`
     }));
-    console.log(data.results);
     displayPokemon(pokemon);
 };
 
