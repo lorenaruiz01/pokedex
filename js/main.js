@@ -5,7 +5,7 @@ const fetchPokemon = async () => {
     const responseFromUrl = await fetch(url);
     const data = await responseFromUrl.json();
     const pokemon = data.results.map( (result, index) => ({
-        name: result.name, 
+        ...result,
         id: index + 1,
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+ 1}.png`
     }));
