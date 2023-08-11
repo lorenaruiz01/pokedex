@@ -23,6 +23,9 @@ const displayPokemon = (pokemon) => {
     pokedex.innerHTML = pokemonHTMLString;
 };
 
+const selectPokemon = async (id) => {
+
+}
 
 fetchPokemon();
 
