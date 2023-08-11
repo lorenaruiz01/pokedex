@@ -27,7 +27,16 @@ const selectPokemon = async (id) => {
     const response = await fetch(url);
     const individualPokemonData = await response.json();
     displayPopup(individualPokemonData);
-}
+};
+
+const displayPopup = (individualPokemonData) => {
+    const type = individualPokemonData.types.map( (type) => type.type.name).join(', ');
+    const htmlString = `
+    <div class="popup">
+    
+    </div>
+    `
+};
 
 fetchPokemon();
 
