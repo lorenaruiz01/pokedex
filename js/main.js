@@ -8,7 +8,8 @@ const fetchPokemon = async () => {
         name: data.name, 
         id: index + 1,
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+ 1}.png`
-    }))
+    }));
+    displayPokemon(pokemon);
 };
 
 const displayPokemon = (pokemon) => {
