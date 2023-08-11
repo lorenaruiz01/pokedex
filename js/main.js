@@ -52,7 +52,6 @@ const displayPopup = (pokemon) => {
 const closePopup = () => {
     const popup = document.querySelector('.popup');
     popup.parentElement.removeChild(popup);
-
-}
+};
 
 fetchPokemon();
