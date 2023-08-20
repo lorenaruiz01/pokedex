@@ -1,5 +1,5 @@
 const pokedex = document.getElementById('pokedex');
-const pokeChache = {};
+const pokeCache = {};
 
 const fetchPokemon = async () => {
     const url = `https://pokeapi.co/api/v2/pokemon/?limit=150`;
@@ -24,14 +24,14 @@ const displayPokemon = (pokemon) => {
 };
 
 const selectPokemon = async (id) => {
-    if(!pokeChache[id]){
+    if(!pokeCache[id]){
         const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
         const response = await fetch(url);
         const pokemon = await response.json();
-        pokeChache[id] = pokemon;
+        pokeCache[id] = pokemon;
         displayPopup(pokemon);
     } else{
-        displayPopup(pokeChache[id]);
+        displayPopup(pokeCache[id]);
     }
 };
 
